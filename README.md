@@ -14,13 +14,8 @@ bundle install
 
 Clone the repo, and create a new psql database*. Default database name required is myapi, which can be created using the command.
 ```
-# Start psql
-psql
-# Create new database called myapi
-CREATE DATABASE myapi;
-# Quit psql
-\q
-```
+rails db:create
+``
 
 Edit name of database in config/database.yml.
 
@@ -49,7 +44,7 @@ Note that Post only takes in `title:string` and `body:text`.
 
 ## Creating new endpoints
 
-``` 
+```
 # Create a new model rails generate model <model_name> <...datas>
 rails generate model Person student_id:string age:integer date_of_birth:date freshman:boolean
 # Add routes in config/routes.rb (URL depends on this)
@@ -64,9 +59,9 @@ rails generate model Person student_id:string age:integer date_of_birth:date fre
 which psql
 
 # To install:
-#MacOS: 
+#MacOS:
 brew install psql
-# Linux: 
+# Linux:
 apt-get install psql
 ```
 
