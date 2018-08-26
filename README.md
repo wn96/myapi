@@ -1,24 +1,25 @@
-# README
+# A simple Rails API App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
+Clone the repo, and create a new psql database. Default database name required is myapi, which can be created using the command
+```
+# Start psql
+psql
+# Create new database called myapi
+CREATE DATABASE myapi;
+# Quit psql
+\q
+```
 
-Things you may want to cover:
+## Use it as an API
 
-* Ruby version
+**endpoint:** `http://localhost:3000<format>`
 
-* System dependencies
+| Resources    | Request  | Description     | Format
+| ------------ | -------- |---------------- | ------
+| Index        | GET      | Show all posts  | `/api/v1`
+| Show         | GET      | Show a post     | /api/v1/:post_id
+| Create       | POST     | Create a post   | /api/v1/:post_id
+| Update       | PUT      | Update a post   | /api/v1/:post_id
+| Destroy      | DESTROY  | Destroy a post  | /api/v1/:post_id
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
