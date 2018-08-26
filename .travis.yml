@@ -1,4 +1,11 @@
-language: ruby
-rvm:
- - 2.2
- - jruby
+before_script:
+  - bundle install
+rubocop:
+  <<: *minimal_setup
+  stage: test
+  script:
+  - gem install rubocop --no-document
+  - rubocop
+  only:
+    - master
+
