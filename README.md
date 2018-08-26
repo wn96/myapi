@@ -1,4 +1,5 @@
 # A simple Rails API App
+[![CircleCI](https://circleci.com/gh/wn96/myapi/tree/master.svg?style=svg)](https://circleci.com/gh/wn96/myapi/tree/master)
 
 ## Installation
 Clone the repo, and create a new psql database. Default database name required is myapi, which can be created using the command
