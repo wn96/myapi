@@ -15,7 +15,7 @@ bundle install
 Clone the repo, and create a new psql database*. Default database name required is myapi, which can be created using the command.
 ```
 rails db:create
-``
+```
 
 Edit name of database in config/database.yml.
 
